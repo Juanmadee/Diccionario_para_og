@@ -1,0 +1,9 @@
+import random
+
+var1 = "abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+lgps = int(input("Introduce la longitud de tu constraseña: "))
+pswd = ""
+for i in range(lgps):
+    pswd = pswd + random.choice(var1)
+
+print("Tu contraseña es:", pswd)
